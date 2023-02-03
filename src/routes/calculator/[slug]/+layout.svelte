@@ -3,7 +3,7 @@
 
 	export let data: LayoutServerData;
 
-	$: cssVarStyles = Object.entries(data.style)
+	const cssVarStyles = Object.entries(data.style)
 		.map(([key, value]) => `--${key}:${value}`)
 		.join(';');
 </script>
