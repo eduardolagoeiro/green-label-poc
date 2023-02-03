@@ -1,6 +1,6 @@
 <script lang="ts">
-	import MaskInput from 'svelte-input-mask/MaskInput.svelte';
 	import Button from '../../../ui/button.svelte';
+	import Input from '../../../ui/input.svelte';
 	import Select from '../../../ui/select.svelte';
 	import TransitionContainer from './transition-container.svelte';
 
@@ -15,7 +15,9 @@
 
 	let value: number;
 
+	let name: string = '';
 	let cpf: string = '';
+	let email: string = '';
 </script>
 
 {#if step === 1}
@@ -92,29 +94,9 @@
 		</div>
 
 		<div class="relative flex w-full flex-col items-center gap-4 py-8">
-			<input
-				class="h-12 w-full rounded-lg border-2 border-solid border-primary-color indent-4 text-sm"
-				type="text"
-				placeholder="Nome"
-				name="Nome"
-				id="name"
-			/>
-			<MaskInput
-				class="h-12 w-full rounded-lg border-2 border-solid border-primary-color indent-4 text-sm"
-				placeholder="CPF"
-				maskChar="_"
-				mask="000.000.000-00"
-				on:change={({ detail }) => {
-					cpf = detail.unmaskedValue;
-				}}
-			/>
-			<input
-				class="h-12 w-full rounded-lg border-2 border-solid border-primary-color indent-4 text-sm"
-				type="email"
-				placeholder="E-mail"
-				name="email"
-				id="email"
-			/>
+			<Input type="text" placeholder="Nome" name="Nome" id="name" bind:value={name} />
+			<Input mask="000.000.000-00" bind:value={cpf} placeholder="CPF" id="cpf" name="cpf" />
+			<Input type="email" placeholder="E-mail" name="email" id="email" bind:value={email} />
 		</div>
 
 		<div class="flex flex-col gap-4">
