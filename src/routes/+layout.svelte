@@ -2,10 +2,6 @@
 	import '../app.css';
 </script>
 
-<slot />
-
-<style lang="postcss">
-	:global(html) {
-		@apply text-primary-color;
-	}
-</style>
+<div class="flex min-h-[100dvh]">
+	<slot />
+</div>

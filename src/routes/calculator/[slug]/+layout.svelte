@@ -10,9 +10,9 @@
 
 <div
 	style={cssVarStyles}
-	class="calculator-bg flex min-h-screen w-full items-end overflow-x-hidden px-6 pb-6"
+	class="calculator-bg flex w-full grow items-end overflow-x-hidden px-6 pb-6 text-primary-color"
 >
-	<div class="flex min-h-[68vh] w-full flex-col rounded-3xl bg-white p-6">
+	<div class="flex min-h-[438px] w-full grow flex-col rounded-3xl bg-white p-6">
 		<img class="pb-6" width="48px" height="48px" src={data.logo} alt="logo ipiranga" />
 		<div class="flex grow flex-col justify-between">
 			<slot />

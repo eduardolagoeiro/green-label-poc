@@ -5,6 +5,7 @@ export const load = (async ({ params }) => {
 		return {
 			logo: 'https://static.moss.earth/strapi/ipiranga_logo_min_9d6b1bd942/ipiranga_logo_min_9d6b1bd942.svg',
 			style: {
+				'warn': '#FFF6CF',
 				white: 'white',
 				'primary-color': '#013765',
 				'text-acent': '#ffcf00'
@@ -14,6 +15,7 @@ export const load = (async ({ params }) => {
 	return {
 		logo: 'https://static.moss.earth/strapi/ipiranga_logo_min_9d6b1bd942/ipiranga_logo_min_9d6b1bd942.svg',
 		style: {
+			'warn': '#FFF6CF',
 			white: 'green',
 			'primary-color': '#c354a2',
 			'text-acent': '#c3f4a2'
