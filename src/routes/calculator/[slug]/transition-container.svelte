@@ -4,7 +4,7 @@
 
 <div
 	class="flex grow flex-col justify-between"
-	in:fade={{ duration: 500, delay: 100 }}
+	in:fade={{ duration: 400, delay: 50 }}
 >
 	<slot />
 </div>
