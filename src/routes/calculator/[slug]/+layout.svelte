@@ -14,9 +14,7 @@
 >
 	<div class="flex min-h-[438px] w-full grow flex-col rounded-3xl bg-white p-6">
 		<img class="pb-6" width="48px" height="48px" src={data.logo} alt="logo ipiranga" />
-		<div class="flex grow flex-col justify-between">
-			<slot />
-		</div>
+		<slot />
 	</div>
 </div>
 
